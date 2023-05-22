@@ -1,0 +1,81 @@
+@media screen and (min-width: 1367px){
+    .main_header .logo-header{
+        display: none;
+      }
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1199px){
+    
+    .banner h1::after{
+        right: 160px;
+    }
+    .main_header .logo-header{
+        display: block;
+      }
+      .main_header .navbar-header{
+        display: none;
+      }
+      .navbar-toggler{
+        background-color: #FFA609;
+      }
+      header .main_header .navbar-collapse {
+        height: 100vh;
+        text-align: left;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 2;
+        background-color: black;
+        padding:30px;
+      }
+      .dishes .card{
+        min-height: 450px;
+        height: 100%;
+      }
+}
+@media screen and (max-width: 991px){
+    h1{
+        font-size:48px;
+    }
+    h2{
+        font-size: 42px;
+    }
+    h3{
+        font-size:36px;
+    }
+    h4{
+        font-size:32px;
+    }
+    h5{
+        font-size: 22px;
+    }
+    h6{
+        font-size: 18px;
+    }
+    .banner h1::after{
+        right: 107px;
+    }
+    .menu .time{
+        border: 0;
+    }
+    .menu .menu_detail{
+        text-align: center;
+    }
+    .dishes .card .dish_detail{
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .news .form-control{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 575px){
+    
+}

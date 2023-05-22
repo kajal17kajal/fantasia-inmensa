@@ -1,0 +1,582 @@
+
+/*=========== Common CSS ==========*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	
+	font-size:16px;
+	font-weight:400;
+	line-height:24px;
+	box-sizing:border-box;
+	color:#151515;
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: capitalize;
+  font-family: 'Domaine Display Narrow';
+}
+h1{
+	font-size:60px; 
+	line-height:80px;
+	font-weight:700;
+  
+}
+h2{
+	font-size:50px;
+	line-height:70px;
+	font-weight:600;
+}
+h3{
+	font-size:40px;
+	line-height:44px;
+	font-weight:500;
+}
+h4{
+	font-size:30px;
+	line-height:30px;
+	font-weight:600;
+}
+h5{
+	font-size:26px;
+	line-height:30px;
+	font-weight:600;
+  color: #C00021;
+}
+h6{
+	font-size:24px;
+	line-height:24px;
+	font-weight:700;
+}
+p{
+	color:inherit;
+  
+}
+
+label{
+	text-transform: capitalize;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight:600;
+}
+
+ul,ol{
+	padding-left: 0;
+  margin-bottom: 0;
+}
+ul > li{
+	list-style-type: none;
+  
+
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+a:hover{
+  fill: #DF8700;
+}
+button{
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 12px 36px;
+  color:#151515;
+  background-color: #FFA609;
+  border-radius: 4px;
+  border: 1px transparent;
+}
+button:hover{
+  background-color: #DF8700;
+}
+
+/*=========== Start header CSS ==========*/
+.main_header{
+  background-color:#0C0C0C;
+  color: #fff;
+  position: relative;
+  
+}
+.main_header .nav-link{
+  color: #fff;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.navbar-nav .nav-link.active{
+  color: #FFA609;
+}
+.nav-link:hover {
+  color: #FFA609;
+}
+.main_header .navbar-nav .nav-item{
+  margin-right: 40px;
+}
+.main_header .logo-header{
+  display: none;
+}
+/*=========== End header CSS ==========*/
+/*=========== Start banner section CSS ==========*/
+.banner{
+ background-color: #0C0C0C;
+ color: #fff;
+ text-align: center;
+ position: relative;
+ padding: 80px 0;
+ margin-bottom: 60px;
+}
+.banner::after{
+  position: absolute;
+  background-image: url("../images/patterns.png");
+  content: "";
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+.banner p{
+  margin-bottom: 60px;
+}
+.banner h1{
+  position: relative;
+}
+.banner h1::after{
+  position: absolute;
+content: "";
+height: 18px;
+width: 378px;
+background-image: url("../images/title_line.svg");
+display: block;
+top: 67px;
+background-repeat: no-repeat;
+background-size: cover;
+right: 342px;
+}
+.banner .owl-carousel {
+  position: relative;
+}
+
+.banner .owl-carousel .item {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.banner .owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .owl-carousel .owl-dots{
+  background-color:white;
+  border-radius: 50%;
+  height:10px;
+  width:10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* .banner .owl-carousel .owl-item.center{
+  position: absolute;
+  bottom: 0;
+} */
+/* .item{
+  position: relative;
+     opacity: 1;
+     -webkit-transition: .4s ease all;
+     transition: .4s ease all;
+     margin: 0 -48px;
+     margin-top: 40px;
+} */
+.item_img img {
+  opacity: 0.3;
+}
+#slide .active.center .item_img img {
+    opacity: 1;
+}
+.item img {
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+.item img {
+  opacity: 0.3;
+}
+#slide .active.center .item img {
+  opacity: 1;
+}
+#slide .center .item:before {
+  content: none;
+  transition: 0.7s ease-in-out;
+} 
+
+/*=========== End banner section CSS ==========*/
+/*=========== Start menu section CSS ==========*/
+.menu{
+  margin:60px 0 ;
+}
+.menu .time{
+  border-right: 1px solid  #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .time p{
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.menu .time .dot{
+  background-color: #FFA609;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  align-self: center;
+}
+.menu .menu_detail{
+  margin-left: 40px;
+}
+.menu .menu_fanta{
+  background-image: linear-gradient(0deg, rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('../images/mensa_fanta.png') ;
+  border-radius: 4px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
+  color: #fff;
+  padding: 23px 74px;
+  margin-bottom: 60px;
+}
+.menu .intervallo_fanta{
+  background-image: linear-gradient(0deg, rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('../images/intervallo_fanta.png') ;
+  border-radius: 4px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
+  color: #fff;
+  padding: 23px 74px;
+}
+/*=========== End menu section CSS ==========*/
+/*=========== Start order section CSS ==========*/
+.order{
+  text-align: center;
+  margin-bottom: 105px ;
+}
+.order h2{
+  margin-bottom: 60px;
+}
+.order .menu_info{
+  background: #FFF4E0;
+border-radius: 10px;
+padding: 40px;
+text-align: center;
+}
+
+.order .card_info{
+  background: #E6E6E6;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  
+}
+.order .collection_info{
+  background: #E1F4EE;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  
+ 
+}
+.order .outer_menudiv{
+  position: relative;
+  padding: 30px;
+  
+}
+.order .outer_carddiv{
+  position: relative;
+  padding: 30px;
+}
+.order .outer_collectdiv{
+  position: relative;
+  padding: 30px;
+}
+.order .outer_menudiv:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-style: solid;
+  border-color:#FFA609;
+  border-width: 3px;
+  height: 50%;
+z-index: -1;
+border-top: 0;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.order .outer_menudiv::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-style: dashed;
+  border-color: #FFA609;
+  border-width: 3px;
+  height: 50%;
+  z-index: -1;
+  border-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.order .outer_carddiv:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-style: dashed;
+  border-color: #4D4D4D;
+  border-width: 3px;
+  height: 50%;
+  z-index: -1;
+  border-top: 0; 
+  border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.order .outer_carddiv::after{
+ 
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-style: solid;
+  border-color:#4D4D4D;
+  border-width: 3px;
+  height: 50%;
+z-index: -1;
+border-bottom: 0;
+
+border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+.order .outer_collectdiv:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-style: solid;
+  border-color:#2E8968;
+  border-width: 3px;
+  height: 50%;
+z-index: -1;
+border-top: 0;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.order .outer_collectdiv::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-style: dashed;
+  border-color: #2E8968;
+  border-width: 3px;
+  height: 50%;
+  z-index: -1;
+  border-bottom: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+/*=========== End order section CSS ==========*/
+/*=========== Start special dishes section CSS ==========*/
+.dishes{
+  background-color: #F7F2E2;
+  padding: 53px 0px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 90px;
+}
+/* .dishes::after{
+  background-image: url('../images/burger_pattern.png');
+  left: -105px;
+  bottom: -225px;
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+
+} */
+
+.dishes .burger_img{
+  position: absolute;
+  left: -120px;
+  bottom: -120px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+}
+.dishes .dish_pattern_img{
+  position: absolute;
+  right: -120px;
+  bottom: -120px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.dishes .dish_img img{
+  width: 180px;
+height: 220px;
+border-radius: 4px;
+}
+.dishes .card{
+  padding:20px;
+  position: relative;
+  z-index: 100;
+  /* min-height: 450px;
+height: 100%; */
+}
+.dishes .card .dish_detail{
+  text-align: left;
+  margin-top: 40px;
+}
+.dishes .btn_dish{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*=========== End special dishes section CSS ==========*/
+/*=========== Start review  section CSS ==========*/
+.customer{
+  margin-bottom: -80px;
+  position: relative;
+}
+.customer h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.customer .profile img{
+  width:40px;
+  height: 40px;
+  
+}
+.customer .profile{
+  display: flex;
+}
+.customer .profile p{
+  color:#C00021;
+  font-family: 'Domaine Display Narrow';
+  margin-left: 10px;
+}
+.customer .item img {
+  opacity: 1;
+  margin: 0;
+}
+.customer .item ul>li{
+  margin-right: 6px;
+}
+.customer .owl-carousel .item{
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+background-color: #fff;
+padding: 22px;
+margin-right: 30px;
+}
+.customer .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  top: 45px;
+}
+.customer .owl-carousel .owl-nav button.owl-prev{
+  left: -25px;
+}
+.customer .owl-carousel .owl-nav button.owl-next{
+  right: 0;
+}
+.customer .owl-carousel .owl-nav span{
+  font-size:35px;
+}
+ .news{
+  background-image: linear-gradient(0deg, rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7)), url('../images/newsletter.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 180px 80px 80px 80px;
+}
+.news .form-control{
+  width: 30%;
+}
+/*=========== End review  section CSS ==========*/
+/*=========== Start footer section CSS ==========*/
+footer .copyright p{
+  font-size:14px;
+  line-height: 22px;
+}
+footer .copyright a{
+  text-decoration: underline;
+}
+footer .social_icon {
+  margin-top: 14px;
+}
+/*=========== End footer section CSS ==========*/
+
+
+.banner .owl-carousel { 
+  margin:0px auto;
+   max-width:100%; 
+   padding: 0 50PX;
+}
+.banner .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+ .carousel_2 .current {
+   border:2px solid #639; 
+   box-sizing:border-box
+   }
+ .carousel_2 .current img {
+   transform-style:flat!important 
+  }
+
+   .banner .carousel_2 :nth-child(2n+2) + .active{
+  height:270px;
+
+}
+.banner .carousel_2 .active.center + .active{
+  height: 270px;
+}
+
+.banner .carousel_2 .active.center{
+  height:370px;
+}
+
+.banner .owl-carousel .item, .banner .owl-carousel .item .item_img{
+  width: 100%;
+  height: 100%;
+}
+.banner .owl-carousel .owl-item{
+  height: 170px;
+}
+.banner .owl-carousel .owl-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
